@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Capo</title>
+<meta name="description" content="Escribile a Capo: atención al cliente, proveedores y búsquedas laborales.">
+<meta name="theme-color" content="#E30613">
+<link rel="icon" href="img/marca/capo-rojo.png">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/permanent-marker-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/capo.css">
+</head>
+<body>
+<a class="sr" href="#principal">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="envoltura">
+    <a class="logo" href="index.html" aria-label="Capo, inicio"><img src="img/marca/capo-amarillo.png" alt="Capo" width="640" height="205"></a>
+    <nav class="nav" id="nav" aria-label="Principal"><a href="index.html">Inicio</a><a href="ofertas.html">Ofertas</a><a href="sucursales.html">Sucursales</a><a href="nosotros.html">Nosotros</a><a href="contacto.html" aria-current="page">Contacto</a></nav>
+    <button type="button" class="nota-lista" aria-label="Abrir mi lista"><span class="txt-largo">Mi lista</span><span class="txt-corto" data-ic="lista"></span><span class="contador">0</span></button>
+    <button type="button" class="menu-btn" aria-label="Menú" aria-expanded="false" aria-controls="nav" data-ic="menu"></button>
+  </div>
+</header>
+<main id="principal">
+
+<section class="cab-pagina fondo-rojo">
+  <div class="envoltura">
+    <h1>Hablemos</h1>
+    <p>Elegí el área, completá los datos y te abrimos WhatsApp con el mensaje listo para mandar.</p>
+  </div>
+</section>
+<section class="fondo-pared seccion" style="padding-top:40px">
+  <div class="envoltura" style="display:grid;grid-template-columns:minmax(0,1fr);gap:40px">
+    <div>
+      <div class="pestanas" role="tablist" aria-label="Área de contacto">
+        <button type="button" class="pestana" role="tab" id="tab-cli" aria-controls="panel-cli" aria-selected="true">Atención al cliente</button>
+        <button type="button" class="pestana" role="tab" id="tab-prov" aria-controls="panel-prov" aria-selected="false" tabindex="-1">Proveedores</button>
+        <button type="button" class="pestana" role="tab" id="tab-eq" aria-controls="panel-eq" aria-selected="false" tabindex="-1">Sumate al equipo</button>
+      </div>
+      <form class="formulario" id="panel-cli" role="tabpanel" aria-labelledby="tab-cli" data-wa="Hola Capo, les escribo desde la web (atención al cliente):" novalidate>
+        <h2 class="ancho">Atención al cliente</h2>
+        <p class="intro ancho">¿Tuviste un inconveniente en una sucursal, una consulta sobre un producto o una sugerencia? Contanos.</p>
+        <div class="campo"><label for="c-nom">Nombre *</label><input id="c-nom" type="text" required autocomplete="given-name"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="c-ape">Apellido *</label><input id="c-ape" type="text" required autocomplete="family-name"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="c-mail">Email *</label><input id="c-mail" type="email" required autocomplete="email"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="c-tel">Teléfono</label><input id="c-tel" type="tel" autocomplete="tel"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="c-suc">Sucursal relacionada</label><select id="c-suc"><option value="">Elegí una opción</option><option>Alberdi</option><option>América</option><option>Los Nogales</option><option>Mercofrut</option><option>San Miguel de Tucumán</option><option>Tafí Viejo</option><option>Av. Siria</option></select><p class="error" aria-live="polite"></p></div><div class="campo"><label for="c-mot">Motivo *</label><select id="c-mot" required><option value="">Elegí una opción</option><option>Consulta sobre producto</option><option>Reclamo por atención</option><option>Sugerencia</option><option>Felicitación</option><option>Consulta general</option></select><p class="error" aria-live="polite"></p></div><div class="campo ancho"><label for="c-msj">Mensaje *</label><textarea id="c-msj" required></textarea><p class="error" aria-live="polite"></p></div>
+        <div class="ancho"><button class="btn" type="submit" data-ic="wa">Enviar consulta por WhatsApp</button></div>
+      </form>
+      <form class="formulario" id="panel-prov" role="tabpanel" aria-labelledby="tab-prov" data-wa="Hola Capo, les escribo desde la web (proveedores):" novalidate hidden>
+        <h2 class="ancho">Proveedores</h2>
+        <p class="intro ancho">¿Tenés un producto o servicio para Capo? El área de compras evalúa todas las propuestas y responde en hasta 5 días hábiles.</p>
+        <div class="campo"><label for="p-nom">Nombre *</label><input id="p-nom" type="text" required autocomplete="name"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="p-emp">Empresa *</label><input id="p-emp" type="text" required autocomplete="organization"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="p-mail">Email *</label><input id="p-mail" type="email" required autocomplete="email"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="p-tel">Teléfono *</label><input id="p-tel" type="tel" required autocomplete="tel"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="p-rub">Rubro *</label><select id="p-rub" required><option value="">Elegí una opción</option><option>Alimentos y bebidas</option><option>Limpieza y perfumería</option><option>Carnicería y fiambres</option><option>Lácteos</option><option>Verdulería y frutas</option><option>Electrónica y bazar</option><option>Servicios logísticos</option><option>Tecnología y software</option><option>Otro</option></select><p class="error" aria-live="polite"></p></div><div class="campo"><label for="p-cuit">CUIT o razón social</label><input id="p-cuit" type="text"><p class="error" aria-live="polite"></p></div><div class="campo ancho"><label for="p-desc">Contanos tu producto o servicio *</label><textarea id="p-desc" required></textarea><p class="error" aria-live="polite"></p></div>
+        <div class="ancho"><button class="btn" type="submit" data-ic="wa">Enviar propuesta por WhatsApp</button></div>
+      </form>
+      <form class="formulario" id="panel-eq" role="tabpanel" aria-labelledby="tab-eq" data-wa="Hola Capo, quiero postularme desde la web:" novalidate hidden>
+        <h2 class="ancho">Sumate al equipo</h2>
+        <p class="intro ancho">Posiciones operativas, administrativas y más en toda Tucumán. Después de enviar, podés adjuntar tu CV en el mismo chat.</p>
+        <div class="campo"><label for="e-nom">Nombre *</label><input id="e-nom" type="text" required autocomplete="given-name"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="e-ape">Apellido *</label><input id="e-ape" type="text" required autocomplete="family-name"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="e-mail">Email *</label><input id="e-mail" type="email" required autocomplete="email"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="e-tel">Teléfono *</label><input id="e-tel" type="tel" required autocomplete="tel"><p class="error" aria-live="polite"></p></div><div class="campo"><label for="e-area">Área de interés *</label><select id="e-area" required><option value="">Elegí una opción</option><option>Atención al cliente / Caja</option><option>Carnicería</option><option>Verdulería</option><option>Reposición / Almacén</option><option>Administración</option><option>Logística</option><option>Seguridad</option><option>Limpieza</option><option>Otro</option></select><p class="error" aria-live="polite"></p></div><div class="campo"><label for="e-suc">Sucursal preferida</label><select id="e-suc"><option value="">Elegí una opción</option><option>Sin preferencia</option><option>Alberdi</option><option>América</option><option>Los Nogales</option><option>Mercofrut</option><option>San Miguel de Tucumán</option><option>Tafí Viejo</option><option>Av. Siria</option></select><p class="error" aria-live="polite"></p></div><div class="campo ancho"><label for="e-por">¿Por qué querés trabajar en Capo? *</label><textarea id="e-por" required></textarea><p class="error" aria-live="polite"></p></div>
+        <div class="ancho"><button class="btn" type="submit" data-ic="wa">Enviar postulación por WhatsApp</button></div>
+      </form>
+    </div>
+    <div class="datos-contacto">
+      <a href="https://api.whatsapp.com/send?phone=543813521860&text=Hola%20Capo%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener" data-ic="wa">WhatsApp +54 381 352-1860</a>
+      <a href="https://www.instagram.com/autoserviciocapo/" target="_blank" rel="noopener" data-ic="ig">@autoserviciocapo</a>
+      <a href="https://www.facebook.com/capooficial" target="_blank" rel="noopener" data-ic="fb">/capooficial</a>
+      <a href="sucursales.html" data-ic="pin">Las 7 sucursales</a>
+    </div>
+  </div>
+</section>
+<script>if(location.hash==='#equipo'){addEventListener('DOMContentLoaded',function(){document.getElementById('tab-eq').click();});}</script>
+</main>
+<footer class="pie">
+  <div class="envoltura">
+    <div>
+      <img src="img/marca/capo-amarillo.png" alt="Capo" width="640" height="205">
+      <p style="margin:0;max-width:34ch">Autoservicio Capo. Tu super de siempre en Tucumán desde 1991.</p>
+      <div class="redes">
+        <a href="https://api.whatsapp.com/send?phone=543813521860&text=Hola%20Capo%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="WhatsApp" data-ic="wa"></a>
+        <a href="https://www.instagram.com/autoserviciocapo/" target="_blank" rel="noopener" aria-label="Instagram" data-ic="ig"></a>
+        <a href="https://www.facebook.com/capooficial" target="_blank" rel="noopener" aria-label="Facebook" data-ic="fb"></a>
+      </div>
+    </div>
+    <div>
+      <h2>Sucursales</h2>
+      <ul>
+        <li><a href="sucursales.html">Av. Siria y Delfín Gallo</a></li>
+        <li><a href="sucursales.html">Lamadrid 1579</a></li>
+        <li><a href="sucursales.html">Av. América y San Juan</a></li>
+        <li><a href="sucursales.html">Mercofrut</a></li>
+        <li><a href="sucursales.html">Los Nogales</a></li>
+        <li><a href="sucursales.html">Tafí Viejo</a></li>
+        <li><a href="sucursales.html">Alberdi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="https://api.whatsapp.com/send?phone=543813521860&text=Hola%20Capo%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">WhatsApp +54 381 352-1860</a></li>
+        <li><a href="https://www.instagram.com/autoserviciocapo/" target="_blank" rel="noopener">@autoserviciocapo</a></li>
+        <li><a href="contacto.html">Proveedores</a></li>
+        <li><a href="contacto.html#equipo">Sumate al equipo</a></li>
+        <li><a href="revista.pdf" download>Revista de ofertas (PDF)</a></li>
+      </ul>
+    </div>
+    <p class="firma">Maqueta de propuesta preparada por JM Digital Consulting. Ofertas tomadas de la revista vigente del 21/11 al 27/11; horarios a confirmar con Capo.</p>
+  </div>
+</footer>
+<script src="js/datos.js"></script>
+<script src="js/capo.js"></script>
+</body>
+</html>

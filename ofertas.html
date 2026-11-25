@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ofertas de la semana | Capo</title>
+<meta name="description" content="Catálogo de ofertas de Capo del 21/11 al 27/11: buscá, filtrá por categoría y armá tu lista.">
+<meta name="theme-color" content="#E30613">
+<link rel="icon" href="img/marca/capo-rojo.png">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/permanent-marker-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/capo.css">
+</head>
+<body>
+<a class="sr" href="#principal">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="envoltura">
+    <a class="logo" href="index.html" aria-label="Capo, inicio"><img src="img/marca/capo-amarillo.png" alt="Capo" width="640" height="205"></a>
+    <nav class="nav" id="nav" aria-label="Principal"><a href="index.html">Inicio</a><a href="ofertas.html" aria-current="page">Ofertas</a><a href="sucursales.html">Sucursales</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a></nav>
+    <button type="button" class="nota-lista" aria-label="Abrir mi lista"><span class="txt-largo">Mi lista</span><span class="txt-corto" data-ic="lista"></span><span class="contador">0</span></button>
+    <button type="button" class="menu-btn" aria-label="Menú" aria-expanded="false" aria-controls="nav" data-ic="menu"></button>
+  </div>
+</header>
+<main id="principal">
+
+<section class="cab-pagina fondo-rojo">
+  <div class="envoltura">
+    <h1>Ofertas de la semana</h1>
+    <p class="vigencia" style="margin:0">Válidas del 21/11 al 27/11 en todas las sucursales, salvo las marcadas “Solo Av. Siria”. <span class="reloj" data-ic="reloj"><span>Del 21/11 al 27/11</span></span></p>
+  </div>
+</section>
+<div class="barra">
+  <div class="envoltura">
+    <div class="fila-filtros">
+      <label class="buscador"><span data-ic="buscar"></span><span class="sr">Buscar en las ofertas</span><input id="q" type="search" placeholder="Buscar: asado, aceite, fernet…" autocomplete="off"></label>
+      <label class="interruptor"><input type="checkbox" id="con-siria" checked> Incluir exclusivas de Av. Siria</label>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Categorías"></div>
+  </div>
+</div>
+<section class="fondo-pared seccion" style="padding-top:32px" aria-label="Ofertas">
+  <div class="envoltura">
+    <div class="fila-filtros" style="margin-bottom:22px">
+      <p class="resultado" id="resultado" role="status"></p>
+      <a class="btn btn-borde btn-chico" href="revista.pdf" download data-ic="bajar">Revista completa en PDF</a>
+    </div>
+    <div class="muro" id="catalogo"></div>
+  </div>
+</section>
+</main>
+<footer class="pie">
+  <div class="envoltura">
+    <div>
+      <img src="img/marca/capo-amarillo.png" alt="Capo" width="640" height="205">
+      <p style="margin:0;max-width:34ch">Autoservicio Capo. Tu super de siempre en Tucumán desde 1991.</p>
+      <div class="redes">
+        <a href="https://api.whatsapp.com/send?phone=543813521860&text=Hola%20Capo%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="WhatsApp" data-ic="wa"></a>
+        <a href="https://www.instagram.com/autoserviciocapo/" target="_blank" rel="noopener" aria-label="Instagram" data-ic="ig"></a>
+        <a href="https://www.facebook.com/capooficial" target="_blank" rel="noopener" aria-label="Facebook" data-ic="fb"></a>
+      </div>
+    </div>
+    <div>
+      <h2>Sucursales</h2>
+      <ul>
+        <li><a href="sucursales.html">Av. Siria y Delfín Gallo</a></li>
+        <li><a href="sucursales.html">Lamadrid 1579</a></li>
+        <li><a href="sucursales.html">Av. América y San Juan</a></li>
+        <li><a href="sucursales.html">Mercofrut</a></li>
+        <li><a href="sucursales.html">Los Nogales</a></li>
+        <li><a href="sucursales.html">Tafí Viejo</a></li>
+        <li><a href="sucursales.html">Alberdi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="https://api.whatsapp.com/send?phone=543813521860&text=Hola%20Capo%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">WhatsApp +54 381 352-1860</a></li>
+        <li><a href="https://www.instagram.com/autoserviciocapo/" target="_blank" rel="noopener">@autoserviciocapo</a></li>
+        <li><a href="contacto.html">Proveedores</a></li>
+        <li><a href="contacto.html#equipo">Sumate al equipo</a></li>
+        <li><a href="revista.pdf" download>Revista de ofertas (PDF)</a></li>
+      </ul>
+    </div>
+    <p class="firma">Maqueta de propuesta preparada por JM Digital Consulting. Ofertas tomadas de la revista vigente del 21/11 al 27/11; horarios a confirmar con Capo.</p>
+  </div>
+</footer>
+<script src="js/datos.js"></script>
+<script src="js/capo.js"></script>
+</body>
+</html>
